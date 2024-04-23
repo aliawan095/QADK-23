@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="qadt.js" href="qadt.js">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Details Form</h2>
+        <form id="studentForm">
+            <label for="rollNumber">Roll Number:</label>
+            <input type="text" id="rollNumber" required><br><br>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="batch">Batch:</label>
+            <input type="text" id="batch" required><br><br>
+            
+            <label for="section">Section:</label>
+            <input type="text" id="section" required><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Quiz Page</h2>
+        <form id="quizForm">
+            <label for="quizHeading">Heading for Quiz Application:</label>
+            <input type="text" id="quizHeading" required><br><br>
+            
+            <label for="quizTopic">Topic for the Quiz:</label>
+            <input type="text" id="quizTopic" required><br><br>
+            
+            <h3>Multiple Choice Questions:</h3>
+            <ol>
+                <li>
+                    <p>Who is founder of SWT?</p>
+                    <input type="radio" name="q1" value="a">Malik Riaz<br>
+                    <input type="radio" name="q1" value="b">Usman Ahmed Khan<br>
+                    <input type="radio" name="q1" value="c">Bashir Ahmed Farooqui<br>
+                    <input type="radio" name="q1" value="d">Nawaz Shreef<br>
+                </li>
+                <!-- Repeat for other questions -->
+            </ol>
+            
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+
+    <div class="container" id="resultsContainer" style="display: none;">
+        <h2>Results Page</h2>
+        <div id="studentDetails"></div>
+        <div id="quizDetails"></div>
+        <div id="score"></div>
+    </div>
+
+    
+</body>
+</html>
